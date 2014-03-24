@@ -30,7 +30,7 @@ class Pyqglviewer < Formula
 
     system 'python', 'configure.py',
            "--module-install-path=#{lib}/#{which_python}/site-packages",
-           "--framework=/usr/local/Frameworks"
+           "--framework=/Library/Frameworks"
     system 'make'
     system 'make', 'install'
 
